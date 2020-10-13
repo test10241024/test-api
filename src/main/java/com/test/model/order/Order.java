@@ -8,31 +8,31 @@ import com.test.model.abstraction.ModelAbstraction;
 
 public class Order extends ModelAbstraction {
 
-	// ÓÃ»§ĞÅÏ¢
+	// ç”¨æˆ·ä¿¡æ¯
 	private String userId;
 	private String userName;
 	private String userPhone;
-	//ÈÎÎñĞÅÏ¢
+	//ä»»åŠ¡ä¿¡æ¯
 	private String taskId;
 	private String taskName;
-	// ¶©µ¥ĞÅÏ¢
-	private Map<Integer, String> payStatusMap; // ¹¹½¨·½·¨ÖĞÓĞ¶¨Òå
+	// è®¢å•ä¿¡æ¯
+	private Map<Integer, String> payStatusMap; // æ„å»ºæ–¹æ³•ä¸­æœ‰å®šä¹‰
 	private int payStatus;
 	private String payStatusStr;
 
-	// ±ê¼Û
+	// æ ‡ä»·
 	private BigDecimal totalFee;
-	// Êµ¼ÊÖ§¸¶
+	// å®é™…æ”¯ä»˜
 	private BigDecimal amountPay;
-	// Î¢ĞÅÔ¤Éú³ÉÖ§¸¶ID
+	// å¾®ä¿¡é¢„ç”Ÿæˆæ”¯ä»˜ID
 	private String prepayId;
 
-	// ´Ë´¦²»Òª¶¯£¡!!
+	// æ­¤å¤„ä¸è¦åŠ¨ï¼!!
 	public Order() {
 		payStatusMap = new HashMap<Integer, String>();
-		payStatusMap.put(1, "ĞÂ½¨¶©µ¥");
-		payStatusMap.put(2, "Ô¤¸¶µ¥Éú³É(Î¢ĞÅÖ§¸¶)");
-		payStatusMap.put(3, "Ö§¸¶³É¹¦(Î¢ĞÅÖ§¸¶)");
+		payStatusMap.put(1, "æ–°å»ºè®¢å•");
+		payStatusMap.put(2, "é¢„ä»˜å•ç”Ÿæˆ(å¾®ä¿¡æ”¯ä»˜)");
+		payStatusMap.put(3, "æ”¯ä»˜æˆåŠŸ(å¾®ä¿¡æ”¯ä»˜)");
 	}
 
 	public String getUserId() {
