@@ -4,7 +4,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.test.dao.IUserDao;
-import com.test.model.User;
+import com.test.model.user.User;
 import com.test.service.IUserService;
 
 

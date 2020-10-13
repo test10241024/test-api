@@ -1,6 +1,6 @@
 package com.test.dao;
 
-import com.test.model.User;
+import com.test.model.user.User;
 
 public interface IUserDao {
 	int deleteByPrimaryKey(Integer id);

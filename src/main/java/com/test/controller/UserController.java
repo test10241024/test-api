@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.test.model.User;
+import com.test.model.user.User;
 import com.test.service.IUserService;
 
 @Controller
@@ -37,10 +37,10 @@ public class UserController {
 		User user = null;
 		if (userId == 1) {
 			user = new User();
-			user.setAge(11);
-			user.setId(1);
-			user.setPassword("123");
-			user.setUserName("manqingxing");
+//			user.setAge(11);
+//			user.setId(1);
+//			user.setPassword("123");
+//			user.setUserName("manqg");
 		}
 
 		model.addAttribute("user", user);
